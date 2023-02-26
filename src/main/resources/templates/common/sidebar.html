@@ -1,0 +1,96 @@
+<aside th:fragment="sidebar" class="main-sidebar">
+    <!-- sidebar-->
+    <section class="sidebar">
+        <div class="user-profile px-10 py-15">
+            <div class="d-flex align-items-center">
+                <div class="image">
+                    <img src="../images/avatar/1.jpg" class="avatar avatar-lg" alt="User Image">
+                </div>
+                <div class="info ml-10">
+                    <p class="mb-0">Xin chào</p>
+                    <h5 class="mb-0">Nguyễn Tất Cường</h5>
+                </div>
+            </div>
+        </div>
+
+        <!-- sidebar menu-->
+        <ul class="sidebar-menu" data-widget="tree">
+            <li>
+                <a th:href="@{/dashboard}">
+                    <i class="ti-dashboard"></i>
+                    <span>Thống kê</span>
+                </a>
+            </li>
+            <li>
+                <a th:href="@{/employee}">
+                    <i class="ti-folder"></i>
+                    <span>Quản lý visa</span>
+                </a>
+            </li>
+            <li>
+                <a th:href="@{/dept}">
+                    <i class="ti-folder"></i>
+                    <span>Quản lý khoản nợ</span>
+                </a>
+            </li>
+            <li>
+                <a th:href="@{/salary}">
+                    <i class="ti-folder"></i>
+                    <span>Quản lý Lương</span>
+                </a>
+            </li>
+            <li>
+                <a th:href="@{/daily}">
+                    <i class="ti-folder"></i>
+                    <span>Quản Lý Công Việc/Ngày</span>
+                </a>
+            </li>
+            <li>
+                <a th:href="@{/product}">
+                    <i class="ti-folder"></i>
+                    <span>Quản Lý Sản Phẩm</span>
+                </a>
+            </li>
+<!--            <li class="treeview">-->
+<!--                <a href="#">-->
+<!--                    <i class="ti-dashboard"></i>-->
+<!--                    <span>Quản lý công nhân</span>-->
+<!--                    <span class="pull-right-container">-->
+<!--              <i class="fa fa-angle-right pull-right"></i>-->
+<!--            </span>-->
+<!--                </a>-->
+<!--                <ul class="treeview-menu">-->
+<!--                    <li><a href="index.html"><i class="ti-more"></i>Dashboard 1</a></li>-->
+<!--                    <li><a href="index2.html"><i class="ti-more"></i>Dashboard 2</a></li>-->
+<!--                    <li><a href="index3.html"><i class="ti-more"></i>Dashboard 3</a></li>-->
+<!--                </ul>-->
+<!--            </li>-->
+            <!--            <li class="treeview">-->
+            <!--                <a href="#">-->
+            <!--                    <i class="ti-layout-grid2"></i>-->
+            <!--                    <span>Apps</span>-->
+            <!--                    <span class="pull-right-container">-->
+            <!--              <i class="fa fa-angle-right pull-right"></i>-->
+            <!--            </span>-->
+            <!--                </a>-->
+            <!--                <ul class="treeview-menu">-->
+            <!--                    <li><a href="extra_calendar.html"><i class="ti-more"></i>Calendar</a></li>-->
+            <!--                    <li><a href="contact_app.html"><i class="ti-more"></i>Contact List</a></li>-->
+            <!--                    <li><a href="contact_app_chat.html"><i class="ti-more"></i>Chat</a></li>-->
+            <!--                    <li><a href="extra_taskboard.html"><i class="ti-more"></i>Todo</a></li>-->
+            <!--                </ul>-->
+            <!--            </li>-->
+        </ul>
+    </section>
+    <div class="sidebar-footer">
+        <!-- item-->
+        <a href="javascript:void(0)" class="link" data-toggle="tooltip" title="" data-original-title="Settings"
+           aria-describedby="tooltip92529"><i class="ti-settings"></i></a>
+        <!-- item-->
+        <a href="mailbox_inbox.html" class="link" data-toggle="tooltip" title="" data-original-title="Email"><i
+                class="ti-email"></i></a>
+        <!-- item-->
+        <a href="javascript:void(0)" class="link" data-toggle="tooltip" title="" data-original-title="Logout"><i
+                class="ti-lock"></i></a>
+    </div>
+</aside>

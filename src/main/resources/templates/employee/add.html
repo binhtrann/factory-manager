@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head th:replace="common/head.html :: head"></head>
+
+<body class="hold-transition dark-skin theme-primary fixed">
+<div th:replace="common/header.html :: header"></div>
+<div th:replace="common/sidebar.html :: sidebar"></div>
+<div class="content-wrapper">
+    <div class="container-full">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="d-flex align-items-center">
+                <div class="mr-auto">
+                    <h3 class="page-title">Thêm mới công nhân</h3>
+                </div>
+
+            </div>
+        </div>
+        <section class="content">
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <div class="box">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">Thông tin</h4>
+                        </div>
+                        <!-- /.box-header -->
+                        <form class="form">
+                            <div class="box-body">
+                                <h4 class="box-title text-info"><i class="ti-user mr-15"></i>Công nhân</h4>
+                                <hr class="my-15">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Họ và tên</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Năm sinh</label>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Số điện thoại ( tại xưởng )</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Số hộ chiếu</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Xưởng</label>
+                                            <select class="form-control">
+                                                <option>Xưởng 1</option>
+                                                <option>Xưởng 2</option>
+                                                <option>Xưởng 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Ngày sang</label>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Hạn visa</label>
+                                            <input type="date" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Chọn ảnh visa</label>
+                                            <input type="file" id="file" accept="image/png, image/gif, image/jpeg" class="input-file">
+                                            <label for="file" class="btn btn-tertiary js-labelFile d-flex align-items-center justify-content-center">
+                                                <i class="icon fa fa-check"></i>
+                                                <span class="js-fileName">Chọn ảnh</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4 class="box-title text-info"><i class="ti-save mr-15"></i> Thông tin người nhà</h4>
+                                <hr class="my-15">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Họ và tên</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Số điện thoại</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Địa chỉ</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Số tài khoản</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Ngân hàng</label>
+                                            <select class="form-control select2" style="width: 100%;">
+                                                <option selected="selected">BIDV - Ngân hàng Đầu tư và Phát triển Việt Nam</option>
+                                                <option>Vietcombank - Ngân hàng Ngoại thương Việt Nam</option>
+                                                <option>Vietinbank - Ngân hàng Công Thương Việt Nam</option>
+                                                <option>Agribank - Ngân hàng Nông nghiệp và Phát triển Nông thôn VN</option>
+                                                <option>MB - Ngân hàng Quân đội</option>
+                                                <option>SHB - Ngân hàng Sài Gòn-Hà Nội</option>
+                                                <option>Techcombank - Ngân hàng Kỹ Thương Việt Nam</option>
+                                                <option>VPBank - Ngân hàng Việt Nam Thịnh Vượng</option>
+                                                <option>CB - Ngân hàng Xây dựng</option>
+                                                <option>Oceanbank - Ngân hàng Đại Dương</option>
+                                                <option>GPBank - Ngân hàng Dầu Khí Toàn Cầu</option>
+                                                <option>ACB - Ngân hàng Á Châu</option>
+                                                <option>HDBank - Ngân hàng TMCP Phát triển Nhà Tp HCM</option>
+                                                <option>SCB - Ngân hàng TMCP Sài Gòn</option>
+                                                <option>Sacombank - Ngân hàng Sài Gòn Thương Tín</option>
+                                                <option>TPBank - Ngân hàng Tiên Phong</option>
+                                                <option>VIB - Ngân hàng TMCP Quốc tế Việt Nam</option>
+                                                <option>MSB - Ngân hàng Hàng Hải Việt Nam</option>
+                                                <option>SeABank - Ngân hàng Đông Nam Á</option>
+                                                <option>OCB - Phương Đông</option>
+                                                <option>Eximbank - Ngân hàng xuất nhập khẩu Việt Nam</option>
+                                                <option>LienVietPostBank - Bưu điện Liên Việt</option>
+                                                <option>Bac A Bank - Ngân hàng TMCP Bắc Á</option>
+                                                <option>An Binh Bank - Ngân hàng An Bình</option>
+                                                <option>Đông Á Bank - Ngân hàng TMCP Đông Á</option>
+                                                <option>BaoViet Bank - Ngân hàng Bảo Việt</option>
+                                                <option>Nam A Bank - Ngân hàng TMCP Nam Á</option>
+                                                <option>VietBank - Ngân hàng Việt Nam Thương Tín</option>
+                                                <option>Viet A Bank - Ngân hàng TMCP Việt Á</option>
+                                                <option>Kienlongbank - Ngân hàng Kiên Long</option>
+                                                <option>Saigonbank - Ngân hàng Sài Gòn Công Thương</option>
+                                                <option>PG Bank - Ngân hàng Xăng dầu Petrolimex</option>
+                                            </select>
+                                        </div>
+                                        <!-- /.form-group -->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.box-body -->
+                            <div class="box-footer">
+                                <button type="submit" class="btn btn-rounded btn-primary btn-outline">
+                                    <i class="ti-save-alt"></i> Lưu
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.box -->
+                </div>
+
+                <div class="col-lg-6 col-12">
+                    <div class="box">
+                        <div class="box-header with-border">
+                            <h4 class="box-title">Xem trước hộ chiếu</h4>
+                        </div>
+                        <!-- /.box-header -->
+                        <form class="form">
+                            <div class="box-body">
+                                <!--                                <h4 class="box-title text-info"><i class="ti-user mr-15"></i> About User</h4>-->
+                                <!--                                <hr class="my-15">-->
+                                <div class="row">
+                                    <div class="col">
+                                        <img id="preview-image" src="">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.box -->
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div th:replace="common/script.html :: script"></div>
+</body>
+
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            let reader = new FileReader();
+            reader.onload = function (e) {
+                $('#preview-image').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#file").change(function () {
+        readURL(this);
+    });
+
+    (function () {
+        "use strict";
+
+        $(".input-file").each(function () {
+            let $input = $(this),
+                $label = $input.next(".js-labelFile"),
+                labelVal = $label.html();
+
+            $input.on("change", function (element) {
+                let fileName = "";
+                if (element.target.value)
+                    fileName = element.target.value.split("\\").pop();
+                fileName
+                    ? $label.addClass("has-file").find(".js-fileName").html(fileName)
+                    : $label.removeClass("has-file").html(labelVal);
+            });
+        });
+    })();
+</script>
+</html>

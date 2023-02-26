@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head th:replace="common/head.html :: head"></head>
+
+<body class="hold-transition dark-skin theme-primary fixed">
+<div th:replace="common/header.html :: header"></div>
+<div th:replace="common/sidebar.html :: sidebar"></div>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <div class="container-full">
+        <!-- Content Header (Page header) -->
+        <div class="content-header">
+            <div class="d-flex align-items-center">
+                <div class="mr-auto">
+                    <h3 class="page-title">Danh sách thông tin công nhân</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <section class="content">
+            <div class="row">
+                <div class="col-12">
+                    <div class="box">
+                        <div class="box-header with-border d-flex justify-content-between">
+                            <!--                            <h3 class="box-title">Hover Export Data Table</h3>-->
+                            <h6 class="box-subtitle">Xuất dữ liệu tới Sao Chép, CSV, Excel, PDF & In</h6>
+                            <a th:href="@{/employee/add}" class="btn btn-primary btn-md">Thêm
+                                mới
+                            </a>
+                        </div>
+                        <!-- /.box-header -->
+                        <div class="box-body">
+                            <div class="table-responsive">
+                                <div class="category-filter align-items-center w-auto d-flex float-right pb-2 " id="factory-filter">
+                                    <select  class="form-control w-auto">
+                                        <option value="Classical">Xưởng 1</option>
+                                        <option value="Hip Hop">Xưởng 2</option>
+                                        <option value="Jazz">Xưởng 3</option>
+                                    </select>
+                                </div>
+                                <table id="employee-list"
+                                       class="table table-bordered table-hover display nowrap margin-top-10 w-p100">
+                                    <thead>
+                                    <tr>
+                                        <th>Tên</th>
+                                        <th>Năm Sinh</th>
+                                        <th>Số Hộ Chiếu</th>
+                                        <th>Quê Quán</th>
+                                        <th>Ngày Sang</th>
+                                        <th>Thời Hạn Visa</th>
+                                        <th>Ảnh Visa</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Nguyễn Minh Quân</td>
+                                        <td>19/10/2021</td>
+                                        <td>612763212398</td>
+                                        <td>Nghệ An</td>
+                                        <td>10/12/2020</td>
+                                        <td>20/12/2025</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm btn-show-visa" data-toggle="modal" data-target="#modal-center" data-image="https://dulichhoanmy.com/wp-content/uploads/2022/07/passport-la-gi-2.jpg">Xem</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nguyễn Minh Quân</td>
+                                        <td>19/10/2021</td>
+                                        <td>612763212398</td>
+                                        <td>Nghệ An</td>
+                                        <td>10/12/2020</td>
+                                        <td>20/12/2025</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm btn-show-visa" data-toggle="modal" data-target="#modal-center" data-image="https://dulichhoanmy.com/wp-content/uploads/2022/07/passport-la-gi-2.jpg">Xem</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nguyễn Minh Quân</td>
+                                        <td>19/10/2021</td>
+                                        <td>612763212398</td>
+                                        <td>Nghệ An</td>
+                                        <td>10/12/2020</td>
+                                        <td>20/12/2025</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm btn-show-visa" data-toggle="modal" data-target="#modal-center" data-image="https://dulichhoanmy.com/wp-content/uploads/2022/07/passport-la-gi-2.jpg">Xem</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nguyễn Minh Quân</td>
+                                        <td>19/10/2021</td>
+                                        <td>612763212398</td>
+                                        <td>Nghệ An</td>
+                                        <td>10/12/2020</td>
+                                        <td>20/12/2025</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm btn-show-visa" data-toggle="modal" data-target="#modal-center" data-image="https://dulichhoanmy.com/wp-content/uploads/2022/07/passport-la-gi-2.jpg">Xem</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nguyễn Minh Quân</td>
+                                        <td>19/10/2021</td>
+                                        <td>612763212398</td>
+                                        <td>Nghệ An</td>
+                                        <td>10/12/2020</td>
+                                        <td>20/12/2025</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm btn-show-visa" data-toggle="modal" data-target="#modal-center" data-image="https://dulichhoanmy.com/wp-content/uploads/2022/07/passport-la-gi-2.jpg">Xem</button>
+                                        </td>
+                                    </tr><tr>
+                                        <td>Nguyễn Minh Quân</td>
+                                        <td>19/10/2021</td>
+                                        <td>612763212398</td>
+                                        <td>Nghệ An</td>
+                                        <td>10/12/2020</td>
+                                        <td>20/12/2025</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm btn-show-visa" data-toggle="modal" data-target="#modal-center" data-image="https://dulichhoanmy.com/wp-content/uploads/2022/07/passport-la-gi-2.jpg">Xem</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nguyễn Minh Quân</td>
+                                        <td>19/10/2021</td>
+                                        <td>612763212398</td>
+                                        <td>Nghệ An</td>
+                                        <td>10/12/2020</td>
+                                        <td>20/12/2025</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm btn-show-visa" data-toggle="modal" data-target="#modal-center" data-image="https://dulichhoanmy.com/wp-content/uploads/2022/07/passport-la-gi-2.jpg">Xem</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nguyễn Minh Quân</td>
+                                        <td>19/10/2021</td>
+                                        <td>612763212398</td>
+                                        <td>Nghệ An</td>
+                                        <td>10/12/2020</td>
+                                        <td>20/12/2025</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm btn-show-visa" data-toggle="modal" data-target="#modal-center" data-image="https://dulichhoanmy.com/wp-content/uploads/2022/07/passport-la-gi-2.jpg">Xem</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nguyễn Minh Quân</td>
+                                        <td>19/10/2021</td>
+                                        <td>612763212398</td>
+                                        <td>Nghệ An</td>
+                                        <td>10/12/2020</td>
+                                        <td>20/12/2025</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm btn-show-visa" data-toggle="modal" data-target="#modal-center" data-image="https://dulichhoanmy.com/wp-content/uploads/2022/07/passport-la-gi-2.jpg">Xem</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nguyễn Minh Quân</td>
+                                        <td>19/10/2021</td>
+                                        <td>612763212398</td>
+                                        <td>Nghệ An</td>
+                                        <td>10/12/2020</td>
+                                        <td>20/12/2025</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm btn-show-visa" data-toggle="modal" data-target="#modal-center" data-image="https://dulichhoanmy.com/wp-content/uploads/2022/07/passport-la-gi-2.jpg">Xem</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nguyễn Minh Quân</td>
+                                        <td>19/10/2021</td>
+                                        <td>612763212398</td>
+                                        <td>Nghệ An</td>
+                                        <td>10/12/2020</td>
+                                        <td>20/12/2025</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm btn-show-visa" data-toggle="modal" data-target="#modal-center" data-image="https://dulichhoanmy.com/wp-content/uploads/2022/07/passport-la-gi-2.jpg">Xem</button>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="modal center-modal fade" id="modal-center" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Ảnh Visa</h5>
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <img src="" id="img-visa">
+            </div>
+        </div>
+    </div>
+</div>
+<div th:replace="common/script.html :: script"></div>
+<!-- /.content-wrapper -->
+</body>
+<script>
+        $(document).ready(function (){
+            $('.btn-show-visa').click(function (){
+                console.log($(this).attr('data-image'));
+                $('#img-visa').attr('src',$(this).attr('data-image'))
+            });
+        });
+</script>
+</html>
