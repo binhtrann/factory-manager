@@ -31845,10 +31845,21 @@
         color: #5aac7b;
     }
 
-    #employee-list_filter{
+    #employee-list_filter, #daily-table_filter{
         display: flex;
+        padding-top: unset !important;
     }
-    .form-control[aria-controls="employee-list"]{
+    .form-control[aria-controls="employee-list"] , .form-control[aria-controls="daily-table"]{
         width: 120px !important;
+
+    }
+
+    @media (min-width: 768px) {
+        .md-float-right{
+            float: right !important;
+        }
+        .md-float-left{
+            float:left;
+        }
     }
     /*# sourceMappingURL=style.css.map */
